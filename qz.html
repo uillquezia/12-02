@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desde que sou feliz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #fff;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/29/06/17/heart-1868179_1280.png'),
+                              url('https://cdn.pixabay.com/photo/2016/03/09/15/27/roses-1246498_1280.jpg');
+            background-repeat: repeat;
+            background-size: 150px, cover;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        .container {
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            width: 380px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            animation: brilho 2s infinite alternate;
+        }
+
+        @keyframes brilho {
+            from { box-shadow: 0 0 15px rgba(255, 192, 203, 0.7); }
+            to { box-shadow: 0 0 25px rgba(255, 105, 180, 0.9); }
+        }
+
+        .slideshow {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        h1 {
+            font-weight: 600;
+            margin: 15px 0;
+            color: #ffe4e1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .counter {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes brilhoCaindo {
+            from { transform: translateY(-10vh); opacity: 1; }
+            to { transform: translateY(100vh); opacity: 0; }
+        }
+
+        .brilho {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+            animation: brilhoCaindo linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slideshow">
+            <img src="img/IMG_20240101_001251_777.webp">
+            <img src="img/IMG_20241013_092022_026.webp">
+            <img src="img/Screenshot_20250211_214945_Gallery.jpg">
+            <img src="img/IMG_20240919_193107_898.webp">
+            <img src="img/IMG_20240919_193413_566.webp">
+            <img src="img/IMG_20240919_193519_293.webp">
+            <img src="img/IMG-20221111-WA0007.jpg">
+            <img src="img/IMG-20230404-WA0031.jpg">
+            <img src="img/IMG-20230519-WA0039.jpg">
+            <img src="img/IMG-20230519-WA0045.jpg">
+            <img src="img/IMG_20240919_193135_190.webp">
+            <img src="img/IMG_20240919_193146_750.webp">
+            <img src="img/IMG-20230404-WA0029.jpg">
+            <img src="img/IMG-20230708-WA0020.jpg">
+            <img src="img/IMG-20230813-WA0184.jpg">
+            <img src="img/IMG-20250104-WA0040.jpg">
+            <img src="img/Snapchat-207919692.jpg">
+            <img src="img/IMG-20231209-WA0029.jpg">
+            <img src="img/IMG-20240101-WA0003.jpg">
+            <img src="img/IMG-20240101-WA0006.jpg">
+            <img src="img/IMG-20240101-WA0011.jpg">
+            <img src="img/IMG-20240618-WA0013.jpg">
+            <img src="img/IMG-20250104-WA0046(1).jpg">
+            <img src="img/Snapchat-1513039585.jpg">
+            <img src="img/IMG-20230624-WA0061.jpg">
+            <img src="img/IMG-20231021-WA0056.jpg">
+            <img src="img/IMG-20240106-WA0013.jpg">
+            <img src="img/IMG-20240221-WA0013.jpg">
+            <img src="img/IMG-20240317-WA0016.jpg">
+            <img src="img/IMG-20240317-WA0018.jpg">
+            <img src="img/IMG-20240618-WA0015.jpg">
+            <img src="img/IMG-20250101-WA0010.jpg">
+            <img src="img/IMG-20230708-WA0021.jpg">
+            <img src="img/IMG-20240612-WA0092.jpg">
+            <img src="img/IMG-20241012-WA0214.jpg">
+            <img src="img/IMG-20250101-WA0012.jpg">
+            <img src="img/IMG-20250101-WA0015.jpg">
+            <img src="img/IMG-20250104-WA0016.jpg">
+            <img src="img/Snapchat-575895810.jpg">
+            <img src="img/Snapchat-691263376.jpg">
+            <img src="img/IMG-20230519-WA0050.jpg">
+            <img src="img/IMG-20231112-WA0025.jpg">
+            <img src="img/IMG-20240317-WA0017.jpg">
+            <img src="img/IMG-20250104-WA0035.jpg">
+            <img src="img/20231021_164831.jpg">
+            <img src="img/20240303_150138.jpg">
+        </div>
+        <h1><i class="fas fa-heart"></i> Sou feliz desde 06/10/2022 <i class="fas fa-heart"></i></h1>
+        <p>Estamos juntos há:</p>
+        <div class="counter" id="contador"></div>
+    </div>
+
+    <script>
+        function atualizarContador() {
+            const dataInicio = new Date("2022-10-06T19:27:00");
+            const agora = new Date();
+            const diferenca = agora - dataInicio;
+
+            const segundos = Math.floor(diferenca / 1000) % 60;
+            const minutos = Math.floor(diferenca / (1000 * 60)) % 60;
+            const horas = Math.floor(diferenca / (1000 * 60 * 60)) % 24;
+            const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24)) % 30;
+            const meses = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 30.4375)) % 12;
+            const anos = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 365.25));
+
+            document.getElementById("contador").innerHTML =
+                `${anos} anos, ${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+        }
+
+        setInterval(atualizarContador, 1000);
+        atualizarContador();
+
+        let imagens = document.querySelectorAll(".slideshow img");
+        let index = 0;
+        function trocarImagem() {
+            imagens.forEach(img => img.style.opacity = "0");
+            imagens[index].style.opacity = "1";
+            index = (index + 1) % imagens.length;
+        }
+        setInterval(trocarImagem, 2000);
+        trocarImagem();
+
+        function criarBrilhos() {
+            for (let i = 0; i < 50; i++) {
+                let brilho = document.createElement("div");
+                brilho.classList.add("brilho");
+                brilho.style.left = Math.random() * 100 + "vw";
+                brilho.style.animationDuration = Math.random() * 3 + 2 + "s";
+                document.body.appendChild(brilho);
+            }
+        }
+        criarBrilhos();
+    </script>
+</body>
+
+</html>
